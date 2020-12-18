@@ -28,5 +28,8 @@
         "laravel-mix-purgecss": "^5.0.0",
         "postcss-import": "^14.0.0",
         "tailwindcss-spinner": "^1.2.0"
+    },
+    "engines": {
+        "node": "14.15"
     }
 }
