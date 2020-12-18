@@ -18,14 +18,14 @@
                     </a>
                 </li>
                 <li class="md:ml-16 mt-3 md:mt-0">
-                    <a href="{{ route('movies.index')}}" clas="hover:text-gray-300">Movie</a>
+                    <a href="{{ route('movies.index')}}" class="hover:text-gray-300">Movie</a>
                 </li>
                 <li class="md:ml-6 mt-3 md:mt-0">
-                    <a href="#" clas="hover:text-gray-300">TV Shows</a>
+                    <a href="#" class="hover:text-gray-300">TV Shows</a>
                 </li>
                 <li class="md:ml-6 mt-3 md:mt-0">
-                    <a href="#" clas="hover:text-gray-300">Actors</a>
-                </li>w
+                    <a href="{{ route('actors.index') }}" class="hover:text-gray-300">Actors</a>
+                </li>
             </ul>
 
            <div class="flex flex-col md:flex-row items-center">
@@ -40,5 +40,6 @@
     </nav>
     @yield('content')
     @livewireScripts
+    @yield('scripts')
 </body>
 </html>

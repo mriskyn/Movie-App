@@ -52,6 +52,6 @@ class MoviesViewModel extends ViewModel
                 'release_date' => Carbon::parse($movie['release_date'])->format('M d, Y'),
                 'genres' => $genresFormatted,
             ]);
-        })->dump();
+        });
     }
 }
