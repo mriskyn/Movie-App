@@ -9,7 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class ViewMoviesTest extends TestCase
 {
-    // /** @test */
+    /** @test */
     public function the_main_page_shows_correct_info()
     {
         Http::fake([
@@ -23,12 +23,11 @@ class ViewMoviesTest extends TestCase
         $response->assertSuccessful();
         $response->assertSee('Popular Movies');
         $response->assertSee('Fake Movie');
-        $response->assertSee('Adventure, Drama, Mystery, Science Fiction, Thriller');
         $response->assertSee('Now Playing');
         $response->assertSee('Now Playing Fake Movie');
     }
 
-    // /** @test */
+    /** @test */
     public function the_movie_page_shows_the_correct_info()
     {
         Http::fake([
@@ -42,7 +41,7 @@ class ViewMoviesTest extends TestCase
         $response->assertSee('Dwayne Johnson');
     }
 
-    // /** @test */
+    /** @test */
     public function the_search_dropdown_works_correctly()
     {
         Http::fake([
